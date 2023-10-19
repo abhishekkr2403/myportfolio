@@ -1,0 +1,11 @@
+{% extends "myapp/base.html" %} {% block maincontent %}
+<h1 style="display: none">cartpage</h1>
+<h1>{{title}}</h1>
+<div class="cateimage">
+  {% for data in data %}
+  <div class="imgcontainer">
+    <img src="{{data.images.url}}" alt="" width="400px" />
+  </div>
+  {% endfor %}
+</div>
+{% endblock maincontent %}

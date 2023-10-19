@@ -1,6 +1,10 @@
 {% extends "myapp/base.html" %} {% block maincontent %}
 <h1 style="display: none">cartpage</h1>
-<h1>{{title}}</h1>
+<div class="catpagehead">
+  <div class="catpagetitle">
+    {{title}}
+  </div>
+</div>
 <div class="cateimage">
   {% for data in data %}
   <div class="imgcontainer">

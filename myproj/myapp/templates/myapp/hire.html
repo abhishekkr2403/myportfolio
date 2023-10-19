@@ -1,0 +1,26 @@
+{% extends "myapp/base.html" %} {% load static %}
+<div class="djl" style="display: none"></div>
+{% block maincontent %}
+<div class="hirepage">
+  <div class="hiresection">
+    <div class="profimg">
+      <img src="{% static "myapp/images/avatar2.jpg" %}" alt="">
+    </div>
+    <h2>Hi this is <span>Abhishek Kumar</span></h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, cum.
+      Quod ea, fuga optio, vitae consectetur cum quidem distinctio ex incidunt
+      corrupti explicabo rerum cupiditate eius.
+    </p>
+    <div class="button">
+      <button>Services</button><button>Portfolio</button>
+    </div>
+    <div class="contacts">
+      <ul>
+        <li>phone:9192001945</li>
+        <li>email:abhishekkr2403@gmail.com</li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock maincontent %}

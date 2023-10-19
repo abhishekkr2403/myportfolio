@@ -1,5 +1,6 @@
-<!DOCTYPE html>
 {% load static %}
+<!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,7 +9,16 @@
     <title>{% block title %}title{% endblock title %}</title>
   </head>
   <body>
-    <div class="nav"></div>
+    <div class="nav">
+      <div class="logo"><a href="{% url "home" %}">Abhi</a></div>
+      <div class="centermenu">
+        <ul>
+          <a href="{% url "home" %}"><li class="{{home}}">Portfolio</li></a>
+          <a href="{% url "hire" %}"><li class="{{hire}}">Hire Me</li></a>
+          <a href=""><li class="{{services}}">Services</li></a>
+        </ul>
+      </div>
+    </div>
     {% block maincontent %}{% endblock maincontent %}
   </body>
 </html>
